@@ -1,0 +1,16 @@
+{
+  "name": "stockproject",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ayumi-b/stockproject",
+  "authors": [
+    "Ayumi Fukuda Bennett <ayumi.fukuda@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
