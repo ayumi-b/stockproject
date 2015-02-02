@@ -4,18 +4,24 @@
   'use strict';
 
   var $input,
-      url = 'http://dev.markitondemand.com/Api/v2/Quote/jsonp/?symbol=AAPL';
+      url = 'http://dev.markitondemand.com/Api/v2/Quote/jsonp/?symbol=';
 
 
   
-  $(".target").submit( function(event){
+  $(".symbol").on('click', function(event){
     var symbol = $(".symbol");
     var symbolUrl = url + symbol + '&callback=?';
+  
+    $.get(url, function(data){
+    console.log(data);
+    }, 'jsonp'); 
+
+
   });
 
-  $.getJSON(url, function(data){
-  console.log(data);
-  });
+ //$.get(url, function(data){
+  //console.log(data);
+  //}, 'jsonp'); 
 
 
   function createTable(){
@@ -46,3 +52,4 @@
 
 
 })();
+
