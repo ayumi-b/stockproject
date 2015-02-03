@@ -1,0 +1,24 @@
+form {
+  margin: 10px 10px;
+}
+
+input {
+  padding: 10px 10px;
+}
+
+.button {
+  font-size: 100px;
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 10px 10px;
+}
+
+th, td, tr, #row1 {
+  border: 1px solid black;
+  text-align: center;
+  min-width: 100px;
+  padding: 10px 10px;
+}

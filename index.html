@@ -6,31 +6,28 @@
 </head>
 <body>
   <h1>Stock-it-to-me!</h1>
-  <form class="target">
-    <input type=text placeholder="stock symbol" class="symbol">
-    <input type=text placeholder="qty">
-    <input type="submit" value="Buy">
+  <form class="form" action="#">
+    <input type=text placeholder="Ticker Symbol" class="symbol">
+    <input type=text placeholder="Quantity" class="quantity">
+    <input type="submit" value="Buy" class="button">
   </form>
   <table>
     <thead>
       <tr>
         <th>Name</th>
-        <th>Qty</th>
         <th>Price</th>
         <th>Change / %</th>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+         <th>Qty</th>
+         <th></th>
       </tr>
     </thead>
+    <tbody id='stockInfo'>
+    </tbody>
   </table>
+  <div class="total"></div>
   <script src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/lodash/3.0.0/lodash.min.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
-
 
